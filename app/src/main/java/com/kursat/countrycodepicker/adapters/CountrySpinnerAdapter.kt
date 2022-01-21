@@ -40,7 +40,3 @@ class CountrySpinnerAdapter (private val countries:ArrayList<Country>, val conte
         return bind.root
     }
 }
-
-interface CountrySpinnerListener{
-    public fun onCountryClick(country: Country)
-}
