@@ -8,10 +8,7 @@ data class Country(var nameCode: String, val phoneCode: String, val name: String
     init {
         nameCode = nameCode.uppercase(Locale.ROOT)
         flagImg ="flag_" + name.lowercase().replace(" ","_")
-        //var arr = flagImg.split("(")
-        //flagImg = arr[0]
-        //flagImg = flagImg.substring(0,flagImg.length-2)
-
+        
         Log.d("Country : ","$name : $flagImg")
     }
 }
